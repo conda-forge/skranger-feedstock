@@ -24,8 +24,9 @@ requirements:
     - pip
     - poetry-core
     - setuptools
-    - numpy
     - cython <3.0.0
+    - wheel
+    - numpy >=1.20
   run:
     - python
     - scikit-learn <1
