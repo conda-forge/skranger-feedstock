@@ -10,7 +10,7 @@ source:
   sha256: e5776c8ac4a353599949747235abc6a7e4d2217ba3a8f76531613422d5ff9c80
 
 build:
-  skip: true  # [py>=400 or py2k or py<37]
+  skip: true  # [py>=311 or py2k or py<37]
   script: {{ PYTHON }} -m pip install . -vv
   number: 1
 
@@ -24,7 +24,7 @@ requirements:
     - poetry-core
     - setuptools
     - numpy
-    - cython
+    - cython <3.0.0
   run:
     - python
     - scikit-learn >=0.23.0,<1
